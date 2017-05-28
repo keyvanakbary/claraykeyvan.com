@@ -1,0 +1,7 @@
+{
+  "name": "claraykeyvan",
+  "private": true,
+  "dependencies": {
+    "infobox": "git@github.com:googlemaps/v3-utility-library.git#infobox"
+  }
+}

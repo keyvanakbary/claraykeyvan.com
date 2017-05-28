@@ -1,0 +1,29 @@
+.countdown {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  margin: 20px;
+}
+
+.label {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.label-number {
+  display: block;
+  font-size: 2em;
+  margin-bottom: 0.1em;
+}
+
+.label-text {
+
+}
+
+.countdown canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

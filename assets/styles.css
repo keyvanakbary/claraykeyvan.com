@@ -1,0 +1,85 @@
+/* Bootstrap overriding */
+.bg-primary {
+  background-color: #00437d !important;
+  color: #fff;
+}
+
+.bg-primary h2 {
+  color: #fff;
+}
+
+h1, h2, h3, .countdown .label-number {
+  font-family: 'Lobster', cursive;
+}
+
+h2, h3 {
+  color: #003562;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 575px) {
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Counters */
+.counter {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.counter canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 575px) {
+  .countdown, .countdown canvas {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+/* Map boxes */
+.infoBox {
+  border-radius: .25rem;
+  overflow: hidden;
+}
+.infoBox > img {
+  position: absolute !important;
+  right: 0;
+}
+
+/* Title decoration */
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #fff;
+  top: 5px;
+  width: 50px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}

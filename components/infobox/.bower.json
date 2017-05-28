@@ -1,0 +1,13 @@
+{
+  "name": "infobox",
+  "homepage": "https://github.com/googlemaps/v3-utility-library",
+  "_release": "infobox",
+  "_resolution": {
+    "type": "tag",
+    "tag": "infobox",
+    "commit": "a2cdc955fcd20d47db28db645e63f0d2054070c9"
+  },
+  "_source": "git@github.com:googlemaps/v3-utility-library.git",
+  "_target": "infobox",
+  "_originalSource": "git@github.com:googlemaps/v3-utility-library.git"
+}
