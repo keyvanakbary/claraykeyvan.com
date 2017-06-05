@@ -1,7 +1,15 @@
 /* Bootstrap overriding */
 .bg-primary {
-  background-color: #00437d !important;
+  background-color: #003562 !important;
   color: #fff;
+}
+
+.background {
+  background-color: #020417 !important;
+  background-image: url('/assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .bg-primary h2 {
