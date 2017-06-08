@@ -1,4 +1,16 @@
 /* Bootstrap overriding */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .bg-primary {
   background-color: #003562 !important;
   color: #fff;
@@ -71,23 +83,23 @@ h2, h3 {
   line-height: 0.5;
   text-align: center;
 }
-.fancy span {
+.fancy > span {
   display: inline-block;
   position: relative;
 }
-.fancy span:before,
-.fancy span:after {
+.fancy > span:before,
+.fancy > span:after {
   content: "";
   position: absolute;
   border-bottom: 2px solid #fff;
   top: 5px;
   width: 50px;
 }
-.fancy span:before {
+.fancy > span:before {
   right: 100%;
   margin-right: 15px;
 }
-.fancy span:after {
+.fancy > span:after {
   left: 100%;
   margin-left: 15px;
 }
