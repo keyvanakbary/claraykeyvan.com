@@ -40,7 +40,7 @@ var Map = function(config) {
 
     var box = new InfoBox({
       content: box,
-      disableAutoPan: false,
+      disableAutoPan: true,
       maxWidth: 0,
       pixelOffset: new google.maps.Size(- (BOX_WIDTH / 2), - (BOX_HEIGHT + c.icon.height + BOX_MARGIN)),
       zIndex: null,
