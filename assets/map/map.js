@@ -24,8 +24,8 @@ var Map = function(config) {
       title: ''
     });
 
-    var BOX_WIDTH = 300;
-    var BOX_HEIGHT = 120;
+    var BOX_WIDTH = 220;
+    var BOX_HEIGHT = 90;
     var BOX_MARGIN = 10;
     var BOX_PADDING = 10;
 
