@@ -3,6 +3,15 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.YouTubePopUp-Content iframe {
+  height: 383px !important;
+}
+
+.YouTubePopUp-Close{
+  bottom: 450px;
+  background-image: url('/components/youtube/close.png');
+}
+
 .container {
   max-width: 1000px;
 }
