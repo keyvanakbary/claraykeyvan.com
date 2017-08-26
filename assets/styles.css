@@ -17,11 +17,24 @@ body {
 }
 
 .background {
-  background-color: #020417 !important;
-  background-image: url('/assets/images/background.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.background-head {
+  background-color: #020417 !important;
+  background-image: url('/assets/images/background.jpg');
+}
+
+.background-video {
+  background-color: #020417 !important;
+  background-image: url('/assets/images/video-background.jpg');
+  height: 500px;
+}
+
+.background-video a {
+  line-height: 500px;
 }
 
 .vertical-parent {
@@ -48,8 +61,8 @@ h2, h3 {
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
 }
 
 @media (max-width: 575px) {

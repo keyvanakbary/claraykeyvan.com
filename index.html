@@ -11,18 +11,19 @@
     <title>Clara y Keyvan se casan</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/components/youtube/YouTubePopUp.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/components/youtube/YouTubePopUp.jquery.js"></script>
     <link href="/assets/styles.css" rel="stylesheet" rel="stylesheet">
     <link href="/assets/countdown/countdown.css" rel="stylesheet">
     <script src="/assets/countdown/countdown.js"></script>
   </head>
 
   <body>
-    <section class="pt-4 pb-4 bg-primary background">
+    <section class="pt-4 pb-4 bg-primary background background-head">
       <div class="container text-center lead pt-3 pb-3">
         <h4 class="text-uppercase mb-4 h4">Nos casamos</h4>
         <h1 class="mb-5 display-3">Clara &amp; Keyvan</h1>
@@ -53,7 +54,7 @@
               </div>
             </div>
           </div>
-          <div class="col col-lg-3 col-sm-6 col-12 hidden-xs-down">
+          <div class="col col-lg-3 col-sm-6 col-12 d-none d-sm-inline">
             <div id="seconds" class="countdown">
               <div class="label">
                   <div class="label-number" data-remaining>0</div>
@@ -63,7 +64,7 @@
           </div>
         </div>
 
-        <p class="fancy"><span><strong>30 Septiembre 2017<span class="hidden-sm-down">, Badajoz</span></strong></span></p>
+        <p class="fancy"><span><strong>30 Septiembre 2017<span class="d-none d-sm-inline">, Badajoz</span></strong></span></p>
       </div>
     </section>
 
@@ -71,11 +72,11 @@
       <div class="container text-center pt-3 pb-3">
         <h2 class="mb-4">Los novios</h2>
         <p class="lead">Juntos desde 2008…<br/>¡ya era hora!</p>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col
-            offset-0 col-12
-            offset-sm-0 col-sm-6
-            offset-lg-2 col-lg-4">
+            col-12
+            col-sm-6
+            col-lg-4">
             <img src="/assets/images/clara.jpg" class="avatar rounded-circle mb-4"/>
             <h3>Clara Fernández</h3>
             <h6>La novia</h6>
@@ -94,10 +95,14 @@
       </div>
     </section>
 
-    <section class="pt-4 pb-4 bg-faded">
+    <section class="pt-4 pb-4 background background-video text-center">
+      <a href="https://youtu.be/XHOE60ug16M" class="text-light" id="youtube-link"><i class="fa fa-play-circle display-2" aria-hidden="true"></i></a>
+    </section>
+
+    <section class="pt-4 pb-4 bg-light">
       <div class="container text-center pt-3 pb-3">
-        <div class="row">
-          <div class="col offset-lg-3 col-lg-6 offset-md-2 col-md-8">
+        <div class="row justify-content-center">
+          <div class="col col-lg-6 col-md-8">
             <h2 class="mb-4">Agenda</h2>
             <table class="table rounded table-bordered" style="background: #fff">
               <tbody>
@@ -113,8 +118,8 @@
 
     <section class="pt-4 pb-4">
       <div class="container text-center pt-3 pb-3">
-        <div class="row">
-          <div class="col offset-lg-3 col-lg-6 offset-md-2 col-md-8">
+        <div class="row justify-content-center">
+          <div class="col col-lg-6 col-md-8">
             <h2 class="mb-4">El lugar de nuestra boda</h2>
             <p class="lead">La boda – tanto la ceremonia como el banquete – se celebrará en un mismo lugar: <a href="http://www.bodegapuenteajuda.com/menu.html" target="_blank">Bodegas Puente Ajuda</a>, un acogedor viñedo rodeado de la dehesa extremeña.</p>
             <ul class="nav nav-pills justify-content-center" role="tablist">
@@ -130,7 +135,7 @@
       </div>
       <div class="tab-content">
         <div class="tab-pane active" id="map" style="height: 500px" role="tabpanel"></div>
-        <div class="tab-pane bg-faded" id="address" role="tabpanel">
+        <div class="tab-pane bg-light" id="address" role="tabpanel">
           <div class="container text-center vertical-parent" style="height: 500px">
             <div class="vertical-child">
               <h4 class="mb-4">Lugar de la boda</h4>
@@ -146,17 +151,16 @@
 
     <section class="pt-4 pb-4">
       <div class="container text-center pt-3 pb-3">
-        <div class="row">
-          <div class="col offset-lg-3 col-lg-6 offset-md-2 col-md-8">
+        <div class="row justify-content-center">
+          <div class="col col-lg-6 col-md-8">
             <h2 class="mb-4">Conoce Badajoz</h2>
             <p class="lead mb-4">Si te quedas unos días, aprovecha y descubre la ciudad. Aquí tienes algunas sugerencias.</p>
           </div>
         </div>
         <div class="card-columns">
           <div class="card">
-
             <img class="card-img-top img-fluid" src="/assets/images/seafood.jpg" alt="Card image cap">
-            <div class="card-block">
+            <div class="card-body">
               <h5 class="card-title"><small class="text-muted">Gastronomía:</small> Galaxia</h5>
               <p class="card-text">El restaurante ofrece una amplia y variada carta de ibéricos, pescados y mariscos frescos de primera calidad.</p>
               <a href="https://www.tripadvisor.es/Restaurant_Review-g262058-d3473754-Reviews-Galaxia-Badajoz_Province_of_Badajoz_Extremadura.html" target="_blank" class="card-link">Más información</a>
@@ -164,7 +168,7 @@
           </div>
           <div class="card">
             <img class="card-img-top img-fluid" src="/assets/images/restaurant.jpg" alt="Card image cap">
-            <div class="card-block">
+            <div class="card-body">
               <h5 class="card-title"><small class="text-muted">Gastronomía:</small> 39siete</h5>
               <p class="card-text">Un nuevo concepto de restauración en un entorno único.</p>
               <a href="http://39siete.com/" target="_blank" class="card-link">Más información</a>
@@ -172,7 +176,7 @@
           </div>
           <div class="card">
             <img class="card-img-top img-fluid" src="/assets/images/alcazaba.jpg" alt="Card image cap">
-            <div class="card-block">
+            <div class="card-body">
               <h5 class="card-title"><small class="text-muted">Turismo:</small> Alcazaba</h5>
                 <p class="card-text">Considerada la alcazaba más grande de Europa, y de las más extensas del mundo en su género y época.</p>
                 <a href="https://es.wikipedia.org/wiki/Alcazaba_de_Badajoz" target="_blank" class="card-link">Más información</a>
@@ -180,7 +184,7 @@
           </div>
           <div class="card">
             <img class="card-img-top img-fluid" src="/assets/images/casona.jpg" alt="Card image cap">
-            <div class="card-block">
+            <div class="card-body">
               <h5 class="card-title"><small class="text-muted">Gastronomía:</small> La Casona Alta</h5>
               <p class="card-text">Desde la plaza más emblemática de Badajoz, ofrece una cocina basada en productos de la tierra extremeña.</p>
               <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g262058-d5254772-Reviews-Taberna_La_Casona_Alta-Badajoz_Province_of_Badajoz_Extremadura.html" target="_blank" class="card-link">Más información</a>
@@ -188,7 +192,7 @@
           </div>
           <div class="card">
             <img class="card-img-top img-fluid" src="/assets/images/tapas.jpg" alt="Card image cap">
-            <div class="card-block">
+            <div class="card-body">
               <h5 class="card-title"><small class="text-muted">Gastronomía:</small> La Corchuela</h5>
               <p class="card-text">Mesón especializado en desayunos, tapas y raciones caseras con productos de la tierra.</p>
               <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g262058-d5617394-Reviews-La_Corchuela-Badajoz_Province_of_Badajoz_Extremadura.html" target="_blank" class="card-link">Más información</a>
@@ -196,7 +200,7 @@
           </div>
           <div class="card">
             <img class="card-img-top img-fluid" src="/assets/images/merida.jpg" alt="Card image cap">
-            <div class="card-block">
+            <div class="card-body">
               <h5 class="card-title"><small class="text-muted">Turismo:</small> Mérida</h5>
               <p class="card-text">Cerca de Badajoz se encuentra uno de los principales y más extensos conjuntos arqueológicos romanos de España.</p>
               <a href="https://es.wikipedia.org/wiki/Conjunto_arqueol%C3%B3gico_de_M%C3%A9rida" target="_blank" class="card-link">Más información</a>
@@ -206,14 +210,14 @@
       </div>
     </section>
 
-    <section class="pt-4 pb-4 bg-faded">
+    <section class="pt-4 pb-4 bg-light">
       <div class="container text-center pt-3 pb-3">
-        <div class="row">
-          <div class="col offset-lg-3 col-lg-6 offset-md-2 col-md-8">
+        <div class="row justify-content-center">
+          <div class="col col-lg-6 col-md-8">
             <h2 class="mb-4">Regalos</h2>
             <p class="lead">
               Si estas pensando en echarnos un cable, siempre puedes ayudarnos a través de la cuenta bancaria que ofrecemos a continuación. <strong>¡Muchas gracias!</strong><br/><br/>
-              <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#bank-details">
+              <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#bank-details">
                 Ver detalles
               </button>
             </p>
@@ -248,8 +252,8 @@
 
     <section class="pt-4 pb-4">
       <div class="container text-center pt-3 pb-3">
-        <div class="row">
-          <div class="col offset-lg-3 col-lg-6 offset-md-2 col-md-8">
+        <div class="row justify-content-center">
+          <div class="col col-lg-6 col-md-8">
             <h2 class="mb-4">¡Gracias!</h2>
             <p class="lead mb-4">Nos hace mucha ilusión que forméis parte de un día tan especial para nosotros, esperamos que lo paséis en grande.</p>
             <img src="/assets/images/party.jpg" height="160" />
@@ -268,6 +272,8 @@
     </section>
 
     <script>
+      $('#youtube-link').YouTubePopUp();
+
       Countdown({
         days: document.getElementById('days'),
         hours: document.getElementById('hours'),

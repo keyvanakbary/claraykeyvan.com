@@ -1,0 +1,13 @@
+{
+  "name": "youtube",
+  "homepage": "https://github.com/QassimHassan/YouTube_PopUp",
+  "_release": "8ccd0200e8",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "8ccd0200e8a19400c949c07c268f9a58c7846a9c"
+  },
+  "_source": "git@github.com:QassimHassan/YouTube_PopUp.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:QassimHassan/YouTube_PopUp.git"
+}
