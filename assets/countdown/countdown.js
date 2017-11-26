@@ -137,8 +137,12 @@ var Countdown = function(elems, config) {
     };
   }
 
-  function render() {
-    var remaining = timeBuckets(endDate.getTime() - now.getTime())
+  function remainingTime() {
+    return endDate.getTime() - now.getTime();
+  }
+
+  function renderProgress() {
+    var remaining = timeBuckets(remainingTime())
 
     var percentages = progress(remaining);
     daysCounter.render(remaining.days, percentages.days);
@@ -147,9 +151,20 @@ var Countdown = function(elems, config) {
     secondsCounter.render(remaining.seconds, percentages.seconds);
   }
 
-  render();
-  setInterval(function () {
-    render();
-    now.setSeconds(now.getSeconds() + 1)
-  }, 1000)
+  function renderDone() {
+    daysCounter.render(0, 100);
+    hoursCounter.render(0, 100);
+    minutesCounter.render(0, 100);
+    secondsCounter.render(0, 100);
+  }
+
+  if (remainingTime() > 0) {
+    renderProgress();
+    setInterval(function () {
+      renderProgress();
+      now.setSeconds(now.getSeconds() + 1)
+    }, 1000)
+  } else {
+    renderDone();
+  }
 };
